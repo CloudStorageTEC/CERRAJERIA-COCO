@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+header {
+    font-weight: bold;
+    font-size: large;
+    text-transform: capitalize;
+}
+
+
+/*AJUSTES DE LOS ESTILOS DE SENCHA EXT JS*/
+
+body.x-border-layout-ct,
+div.x-border-layout-ct {
+    background-color: #eff1f1 !important;
+}
+
+.x-panel-header-default {
+    background-color: #ffbf00cc !important;
+}
+
+.x-panel-header-default {
+    border-top-left-radius: 7px !important;
+    border-top-right-radius: 7px !important;
+}
+
+.x-panel-header-title-default {
+    color: #222 !important;
+    font-size: 15px !important;
+}
+
+.x-toolbar-footer {
+    background-color: white !important;
+    border-bottom-left-radius: 7px !important;
+    border-bottom-right-radius: 7px !important;
+}
+
+.x-btn-default-small {
+    background-color: #ff6961 !important;
+    background-image: none !important;
+    border-color: #f53d33 !important;
+}
+
+.x-form-text-field-body-default {
+    min-width: 250px !important;
+    max-width: 290px !important;
+}
+
+.x-column-header {
+    font: bold 11px/11px helvetica, arial, verdana, sans-serif !important;
+}
+
+.x-panel {
+    overflow: visible !important;
+}
+
+.x-grid-cell-inner {
+    text-overflow: clip !important;
+    white-space: normal !important;
+    text-align: center !important;
+}
+
+.main {
+    height: auto;
+}
+
+#sct1 {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadro {
+    display: flex;
+    background: #7ccce5;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    justify-content: center;
+    height: 185px;
+    margin: 20px;
+    padding-top: 70px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    font-size: 1.5em;
+}
+
+.demas {
+    margin-top: 30px;
+}
+
+select {
+    margin-top: .4em;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 11px;
+    border-radius: 3px;
+    border: 1px solid darkgray;
+}
+
+.paraTraslado {
+    animation-name: mueve;
+    animation-duration: 4s;
+    animation-iteration-count: 5;
+    animation-direction: normal;
+}
+
+@keyframes mueve {
+    25% {
+        transform: translate(3em, 0em);
+    }
+    50% {
+        transform: translate(0em, 0em);
+    }
+    75% {
+        transform: translate(3em, 0em);
+    }
+    100% {
+        transform: translate(0em, 0em);
+    }
+}
+
+a.menu_inhab {
+    display: none;
+}
+
+header.main {
+    padding-top: 0.05em;
+    height: 5em;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    background-color: white;
+    text-transform: capitalize;
+}
+
+.cabe {
+    max-width: 90%;
+    height: 90%;
+}
+
+#titu {
+    font-family: 'Chilanka', cursive;
+    display: inline;
+    vertical-align: 100%;
+    font-size: 1.2em;
+    color: black;
+}
+
+.main-nav {
+    width: 100%;
+    position: relative;
+    z-index: 2000;
+    padding: 2px;
+    margin-bottom: 20px;
+}
+
+.icon-menu {
+    display: block;
+    color: white;
+    border-radius: 3px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.7em;
+}
+
+.menu {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: black;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s linear;
+}
+
+.menu__link {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu__link:hover {
+    background: #4c4c52;
+}
+
+.menu__link--select {
+    background: #C8C8A9;
+}
+
+.mostrar {
+    height: 250px;
+}
+
+.main-footer {
+    background: black;
+    color: white;
+    padding: 50px;
+    padding-top: 20px;
+    font-size: .8em;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.columnas {
+    height: 300px;
+}
+
+.column__title {
+    font-size: 1.5em;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+}
+
+.column__txt {
+    font-size: 1.3em;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: justify;
+    column-count: 3;
+    column-gap: 2.5em;
+    column-rule-width: thick;
+    column-rule-style: dotted;
+    column-rule-color: black;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.sombra {
+    background: black;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+.form-register {
+    width: 95%;
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    border-radius: 7px;
+}
+
+.titulo {
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.form__titulo {
+    background: #82a9d8;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: 5px solid #2f67a3;
+    font-family: 'Chilanka', cursive;
+}
+
+.reg {
+    width: 97%;
+}
+
+.busqueda {
+    margin-left: 1.5em;
+}
+
+.inputT {
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid darkgray;
+}
+
+.input-48 {
+    width: 48%;
+}
+
+.input-100 {
+    width: 97%;
+}
+
+.btn-enviar {
+    padding: 10px 40px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn-enviar:active {
+    transform: scale(1.05);
+}
+
+.sesion {
+    margin: auto;
+    margin-top: 30px;
+    width: 50%;
+    max-width: 500px;
+    background: #f3f3f3;
+    padding: 30px;
+    border: 1px solid #2f67a3;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.tt {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2f67a3;
+}
+
+.inp2 {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+.smt {
+    display: block;
+    padding: 10px;
+    width: 20%;
+    margin-left: 80px;
+    font-size: 20px;
+}
+
+.smt2 {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin-left: 130px;
+    font-size: 20px;
+}
+
+.smt:hover {
+    opacity: 1;
+}
+
+.smt:active {
+    transform: scale(0.5);
+}
+
+.slider {
+    width: 450px;
+    height: 250px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    box-shadow: 0 0 0 5px grey;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 600px) {
+    #titu {
+        font-size: 1.7em;
+    }
+    .cuadro {
+        margin-bottom: 80px;
+        font-size: 2em;
+    }
+    .smt {
+        margin-left: 120px;
+    }
+    .demas {
+        margin-left: 20px;
+        width: 90%;
+    }
+    .slider {
+        width: 600px;
+        height: 300px;
+    }
+    li img {
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .container {
+        margin-left: 125px;
+        width: 950px;
+    }
+    .cuadro {
+        margin: 140px;
+        padding-top: 50px;
+        margin-top: 60px;
+        margin-bottom: 90px;
+        font-size: 2.2em;
+    }
+    #titu {
+        font-size: 2em;
+        vertical-align: 100%;
+        margin-left: 300px;
+    }
+    .columnas {
+        margin-left: 130px;
+    }
+    .column__txt {
+        margin-right: 130px;
+    }
+    .column__title {
+        padding-top: 50px;
+    }
+    .icon-menu {
+        display: none;
+    }
+    .menu {
+        position: static;
+        display: flex;
+        height: auto;
+        width: auto;
+        margin-left: 200px;
+    }
+    .menu__link {
+        padding: 20px;
+    }
+    .smt {
+        margin-left: 150px;
+    }
+    .demas {
+        max-width: 50%;
+        margin-left: 350px;
+    }
+    .slider {
+        width: 1050px;
+        height: 500px;
+    }
+    li img {
+        width: 1050px;
+    }
+    input[type="radio"]+label {
+        width: 24.8%;
+        height: 100px;
+    }
+}

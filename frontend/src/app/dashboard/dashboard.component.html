@@ -1,0 +1,26 @@
+<h1>Lista de Usuarios</h1>
+<div>
+ <table border='1' width='100%' style='border-collapse: collapse;'>
+ <tr>
+ <th>Clave</th>
+ <th>Nombre</th>
+ <th>Apellido </th>
+ <th>Operaciones</th>
+ </tr>
+ <tr *ngFor="let usuario of usuarios">
+ <td>{{ usuario.cve }}</td>
+ <td>{{ usuario.snombre }}</td>
+ <td>{{ usuario.sapepat }}</td>
+ <td>
+ <button (click)="deleteUsuario(usuario.cve)">Borrar</button>
+ <button (click)="selectUsuario(usuario)">Modificar</button>
+ </td>
+ </tr>
+ </table>
+ <br>
+ <form #f = "ngForm">
+ <label>Clave</label>
+ <input type="text" name="cve" [(ngModel)] = "selectedUsuario.scve">
+ <br>
+ <label>Nombre</label>
+ <input type="text" name="snombre" [(ngModel)] = "selectedUsuario.snombre">
